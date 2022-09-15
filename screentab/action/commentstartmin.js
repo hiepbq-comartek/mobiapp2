@@ -10,14 +10,13 @@ import {
   TextInput,
 } from 'react-native';
 import {useState} from 'react';
-// import { Ionicons } from '@expo/vector-icons';
-import Search from './search';
-import Notification from './thongbao';
-import Addpost from './addpost';
+import Search from '../Homescreeen/search';
+import Notification from '../Homescreeen/Notification';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faBell, faPlus, faSearch} from '@fortawesome/free-solid-svg-icons';
-function Startmin({Setaddpost, addpost}) {
-  const [checksearch, setchecksearch] = useState(false);
+import Post from '../Homescreeen/Post';
+function Startmin({setpost, post, setfiledata, filedata}) {
+  const [search, Setsearch] = useState(false);
   const [checkNotification, setcheckNotification] = useState(false);
 
   return (
@@ -53,7 +52,7 @@ function Startmin({Setaddpost, addpost}) {
               <TouchableOpacity
                 activeOpacity={0.8}
                 style={{margin: 8}}
-                onPress={() => setchecksearch(!checksearch)}>
+                onPress={() => Setsearch(!search)}>
                 <FontAwesomeIcon icon={faSearch} size={20} color="#0ef08c" />
               </TouchableOpacity>
               <TouchableOpacity
@@ -73,16 +72,20 @@ function Startmin({Setaddpost, addpost}) {
                   padding: 2,
                   margin: 6,
                 }}
-                onPress={() => Setaddpost(!addpost)}>
+                onPress={() => setpost(!post)}>
                 <FontAwesomeIcon icon={faPlus} size={24} color="#000" />
               </TouchableOpacity>
             </View>
           </View>
         </View>
       </View>
-      {checksearch && <Search />}
-      {checkNotification && <Notification />}
-      {addpost && <Addpost />}
+      {search && <Search Setsearch={Setsearch} />}
+      {checkNotification && (
+        <Notification setcheckNotification={setcheckNotification} />
+      )}
+      {post && (
+        <Post setpost={setpost} setfiledata={setfiledata} filedata={filedata} />
+      )}
     </View>
   );
 }

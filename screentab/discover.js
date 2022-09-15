@@ -8,8 +8,7 @@ import {
   Alert,
   SafeAreaView,
 } from 'react-native';
-import {stylelike} from '../style/stylelike';
-// import { SimpleLineIcons } from "@expo/vector-icons";
+import {stylelike} from '../style/stylediscover';
 import Reduce from '../reducer/reduce';
 import {init} from '../reducer/init';
 import {Checkfollow} from '../reducer/output';
@@ -46,21 +45,7 @@ function LikeStackScreen() {
                     // Alert.alert(data.name);
                   }}
                   activeOpacity={0.8}
-                  style={stylelike.handlelike}>
-                  {/* {data.follow ? (
-                    <SimpleLineIcons
-                      name="user-following"
-                      size={20}
-                      color="green"
-                    />
-                  ) : (
-                    <SimpleLineIcons
-                      name="user-follow"
-                      size={20}
-                      color="black"
-                    />
-                  )} */}
-                </TouchableOpacity>
+                  style={stylelike.handlelike}></TouchableOpacity>
               </View>
               <Text style={stylelike.textstatus}>Đã đăng 5 giờ trước</Text>
               <Text style={stylelike.textstatus_Block}>{data.titile}</Text>

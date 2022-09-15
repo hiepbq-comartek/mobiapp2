@@ -41,9 +41,21 @@ export default function Search() {
           Video
         </Text>
       </View>
-      <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 12}}>
+      <View
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          marginTop: 12,
+          marginBottom: 20,
+        }}>
         <TouchableOpacity>
-          <Text style={{color: '#0ef08c', marginLeft: 40, marginRight: 20}}>
+          <Text
+            style={{
+              color: '#0ef08c',
+              marginLeft: 24,
+              marginRight: 24,
+              fontSize: 16,
+            }}>
             Video đề xuất
           </Text>
         </TouchableOpacity>
@@ -53,6 +65,7 @@ export default function Search() {
               color: '#0ef08c',
               marginLeft: 120,
               marginRight: 20,
+              fontSize: 16,
             }}>
             Video bạn bè
           </Text>

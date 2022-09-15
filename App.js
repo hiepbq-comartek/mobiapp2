@@ -62,6 +62,8 @@ function Homes() {
         name="Trang chủ"
         component={HomeStackScreen}
         options={{
+          tabBarActiveTintColor: '#0ef08c',
+
           tabBarIcon: ({focused, color, size}) => (
             <FontAwesomeIcon icon={faHome} size={size} color={color} />
           ),
@@ -71,6 +73,7 @@ function Homes() {
         name="Khám Phá"
         component={LikeStackScreen}
         options={{
+          tabBarActiveTintColor: '#0ef08c',
           tabBarIcon: ({focused, color, size}) => (
             <FontAwesomeIcon icon={faEarthAmerica} size={size} color={color} />
           ),
@@ -85,7 +88,7 @@ function Homes() {
         name="Video"
         component={SearchStackScreen}
         options={{
-          tabBarActiveTintColor: 'red',
+          tabBarActiveTintColor: '#0ef08c',
           tabBarIcon: ({color, size}) => (
             <FontAwesomeIcon icon={faVideo} size={size} color={color} />
           ),
@@ -104,6 +107,7 @@ function Homes() {
         name="Cài đặt"
         component={ProfileStackScreen}
         options={{
+          tabBarActiveTintColor: '#0ef08c',
           tabBarIcon: ({focused, color, size}) => (
             <FontAwesomeIcon icon={faGear} size={size} color={color} />
             // focused ? (
