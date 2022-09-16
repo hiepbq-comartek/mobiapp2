@@ -46,12 +46,13 @@ function ProfileStackScreen({navigation}) {
         </ScrollView>
       </View>
 
-      <View style={style.account}>
-        <Button
-          title="Đăng xuất"
-          onPress={() => navigation.replace('Đăng nhập')}
-        />
-        <Button title="Xóa tài khoản" />
+      <View style={{alignItems: 'center'}}>
+        <TouchableOpacity onPress={() => navigation.replace('Đăng nhập')}>
+          <Text style={{color: '#0ef08c', fontSize: 20}}>Đăng xuất</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text style={{color: '#0ef08c', fontSize: 20}}>Xóa tài khoản</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );

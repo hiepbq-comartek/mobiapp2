@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Text, View, TouchableOpacity, Image} from 'react-native';
-// import { AntDesign } from "@expo/vector-icons";
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import {faHeart} from '@fortawesome/free-solid-svg-icons';
 
 export default function Commentuser() {
   return (
@@ -30,16 +31,14 @@ export default function Commentuser() {
             />
           </View>
           <View>
-            <Text style={{top: 10, fontSize: 16, color: '#0ef08c'}}>
-              Quang Lam
-            </Text>
+            <Text style={{top: 10, fontSize: 16, color: '#0ef08c'}}>Quang</Text>
             <View style={{top: 16}}>
               <Text style={{fontSize: 12, color: '#0ef08c'}}>Very Good</Text>
             </View>
             <TouchableOpacity
               activeOpacity={0.9}
               style={{right: -220, top: -16}}>
-              {/* <AntDesign name="hearto" size={24} color="#0ef08c" /> */}
+              <FontAwesomeIcon name={faHeart} size={24} color="#0ef08c" />
             </TouchableOpacity>
           </View>
         </View>

@@ -20,7 +20,7 @@ import FilePiker from 'react-native-document-picker';
 import {types} from '@babel/core';
 function Post({setpost, setfiledata, filedata}) {
   // const [Textinput, setTextinput] = useState(false);
-  const [state, dispath] = useReducer(reduce, init);
+  // const [state, dispath] = useReducer(reduce, init);
   const handleFilePicker = async () => {
     try {
       const response = await FilePiker.pick({
@@ -51,12 +51,9 @@ function Post({setpost, setfiledata, filedata}) {
             <Text style={{color: '#0ef08c', fontSize: 28}}>Đăng bài</Text>
           </View>
           <TouchableOpacity onPress={() => setpost(false)}>
-            <View style={style.view}>
-              {/* {Textinput && <Text style={style.checforcus}>Đăng bài</Text>} */}
-            </View>
+            <View style={style.view}></View>
           </TouchableOpacity>
           <TextInput
-            // onFocus={!Textinput}
             style={style.Textuser}
             onChangeText={item => dispath(SetChangtext(item))}
           />

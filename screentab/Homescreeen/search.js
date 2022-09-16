@@ -67,7 +67,6 @@ function Search({Setsearch}) {
             </View>
           </TouchableOpacity>
           <TextInput
-            // onFocus={!Textinput}
             style={{
               fontSize: 20,
               top: 72,
@@ -104,7 +103,6 @@ function Search({Setsearch}) {
                         borderRadius: 28,
                         margin: 4,
                       }}
-                      source={require('../../accset/img/39013954-f5091c3a-43e6-11e8-9cac-37cf8e8c8e4e.jpeg')}
                     />
                     <Text
                       style={{
@@ -112,9 +110,7 @@ function Search({Setsearch}) {
                         marginTop: 8,
                         fontSize: 20,
                         marginLeft: 8,
-                      }}>
-                      Nganng đã thích ảnh của bạn
-                    </Text>
+                      }}></Text>
                   </View>
                 </View>
               </View>

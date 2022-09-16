@@ -22,7 +22,7 @@ function Startblock({setpost, post}) {
         useNativeDriver: false,
         duration: 1000,
       }).start();
-    }, 1000);
+    }, 0);
   }, []);
   return (
     <>

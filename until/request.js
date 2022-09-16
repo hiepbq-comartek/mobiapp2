@@ -1,6 +1,6 @@
 import axios from 'axios';
 const request = axios.create({
-  baseURL: '',
+  baseURL: 'https://6323f15bbb2321cba9215166.mockapi.io/api/',
   timeout: 2000,
 });
 const videoApi = axios.create({

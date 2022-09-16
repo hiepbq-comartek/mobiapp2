@@ -24,15 +24,7 @@ function FriendsStackScreen() {
       <View
         style={{
           alignItems: 'center',
-        }}>
-        <Text
-          style={{
-            color: '#0ef08c',
-            fontSize: 20,
-          }}>
-          Tác giả đã theo dõi
-        </Text>
-      </View>
+        }}></View>
       <ScrollView>
         {dataauthor.map(data => (
           <View

@@ -26,7 +26,6 @@ import {
   faUserGroup,
   faVideo,
 } from '@fortawesome/free-solid-svg-icons';
-
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -98,6 +97,8 @@ function Homes() {
         name="theo dõi"
         component={friendsStackScreen}
         options={{
+          tabBarActiveTintColor: '#0ef08c',
+
           tabBarIcon: ({color, size}) => (
             <FontAwesomeIcon icon={faUserGroup} size={size} color={color} />
           ),
